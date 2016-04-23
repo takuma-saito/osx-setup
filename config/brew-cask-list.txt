@@ -1,0 +1,6 @@
+coteditor
+evernote
+google-chrome
+iterm2
+karabiner
+menumeters

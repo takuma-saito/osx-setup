@@ -1,6 +1,6 @@
 
 - install brew commands
-- install necesary packages form brew and brew cask
+- install neccessary packages form brew and brew cask
 - configure emacs
 - configure zsh
 - configure tmux
