@@ -1,0 +1,7 @@
+rename-window memory
+new-window -n work
+new-window -n buffer
+send-keys -t memory 'j memo' C-m
+send-keys -t memory 'clear' C-m
+send-keys -t tor 'clear' C-m
+select-window -t 2
