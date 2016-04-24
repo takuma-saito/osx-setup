@@ -3,10 +3,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-;; TODO
-;; * 起動時間の短縮（min-loader にベンチマーク, エラーハンドラーを入れる）
+(require 'cask "~/.emacs.d/.cask/main/cask.el")
+(cask-initialize)
 
-;; ロードパスの設定
 (setq load-path
       (append
        (list
@@ -18,32 +17,33 @@
 (set-loader-path "~/.emacs.d/init")
 (min-loads
  (list
-  ;; あってもなくてもよい
-  ;; "ku-proxy.el"
+  
+  ;;;; important
   "func.el"
-
-  ;; 重要
   "env.el"
   "tools.el"
   "helm.el"
-  "scss.el"
   
-  ;; 言語系
+  ;;;; languages
   "lang.el"
   "ruby.el"
   "lisp.el"
-  ;;"haskell.el"
-  ;; "go.el"
-  ;;"yatex.el"
   "rust.el"
   "nim.el"
   "web-mode.el"
   "scala.el"
+
+  ;;;; other
+  ;; "scss.el"
+  ;;"haskell.el"
+  ;; "go.el"
+  ;;"yatex.el"
   ;; "gnuplot.el"
   ;; "nim.el"
   ;;"omake.el"
   ;;"fortran.el"
-  
+  ;; "ku-proxy.el"  
   ;; "multi-web-mode.el"
+  
   ))
 
