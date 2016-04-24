@@ -3,7 +3,7 @@ DIR="$HOME/src/osx-setup/packages/emacs"
 SRC="$HOME/src/osx-setup"
 CLEAN=
 
-while getopts f OPT
+while getopts c OPT
 do
     case $OPT in
         c) CLEAN=true
@@ -27,3 +27,4 @@ mkdir -p $SRC
     cp -a $SRC/packages/emacs $HOME/.emacs.d && cask_install
 }
 ln -sfn $HOME/.emacs.d/init.el $HOME/.emacs.el
+ln -sfn $(brew --prefix)/opt/cask ~/.emacs.d/.cask/main # brew 前提
