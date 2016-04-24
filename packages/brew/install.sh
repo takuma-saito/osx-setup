@@ -1,7 +1,5 @@
 #!/bin/bash
 
-CONF='../config'
-
 brew update
 brew tap sanemat/font
 brew tap caskroom/cask
