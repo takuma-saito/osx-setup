@@ -7,8 +7,9 @@ SRC="$HOME/src/osx-setup"
     rsync -a $HOME/.emacs.d $HOME/.trash/ &&
     rm -rf $HOME/.emacs.d
 mkdir -p $SRC
-rm -rf $HOME/src/osx-setup &&
-    git clone https://github.com/takuma-saito/osx-setup $SRC &&
-    cp -a $SRC/packages/emacs $HOME/.emacs.d
-cd $HOME/.emacs.d && cask install --verbose
-ln -sfn $HOME/.emacs.d/emacs-init.el $HOME/.emacs.el
+[ ! -d $SRC ] &&
+    git clone https://github.com/takuma-saito/osx-setup $SRC || { cd $SRC && git pull }
+cp -a $SRC/packages/emacs $HOME/.emacs.d &&
+    cd $HOME/.emacs.d &&
+    cask install --verbose
+ln -sfn $HOME/.emacs.d/init.el $HOME/.emacs.el
