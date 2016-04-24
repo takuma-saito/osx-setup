@@ -15,7 +15,7 @@
        load-path))
 
 (require 'min-loader)
-(set-loader-path "~/.emacs.d/config")
+(set-loader-path "~/.emacs.d/init")
 (min-loads
  (list
   ;; あってもなくてもよい
