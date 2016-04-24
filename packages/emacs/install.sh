@@ -15,16 +15,23 @@ function cask_install() {
     cd $HOME/.emacs.d && cask install --verbose
 }
 
-[ $CLEAN ] && {
-    mkdir -p $HOME/.trash/.emacs.d &&
-        rsync -a $HOME/.emacs.d $HOME/.trash/.emacs.d &&
-        rm -rf $HOME/.emacs.d
+[[ $CLEAN || ! -d $SRC ]] && {
+    [ -d $HOME/.emacs.d ] && {
+	mkdir -p $HOME/.trash/.emacs.d &&
+            rsync -a $HOME/.emacs.d $HOME/.trash/.emacs.d &&
+            rm -rf $HOME/.emacs.d
+    }
 }
-mkdir -p $SRC
-[ ! -d $SRC ] &&
-    git clone https://github.com/takuma-saito/osx-setup $SRC || { cd $SRC && git pull }
+
+[ ! -d $SRC ] && {    
+    mkdir -p $SRC
+    git clone https://github.com/takuma-saito/osx-setup $SRC
+} || {
+    cd $SRC && git pull
+}
+
 [ -d $HOME/.emacs.d ] && cask_install || {
-    cp -a $SRC/packages/emacs $HOME/.emacs.d && cask_install
+    cp -a $SRC/packages/emacs/ $HOME/.emacs.d && cask_install
 }
 ln -sfn $HOME/.emacs.d/init.el $HOME/.emacs.el
 ln -sfn $(brew --prefix)/opt/cask ~/.emacs.d/.cask/main # brew 前提
