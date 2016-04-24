@@ -26,12 +26,10 @@ function cask_install() {
 [ ! -d $SRC ] && {    
     mkdir -p $SRC
     git clone https://github.com/takuma-saito/osx-setup $SRC
+    cp -a $SRC/packages/emacs/ $HOME/.emacs.d && cask_install
 } || {
-    cd $SRC && git pull
+    cd $SRC && git pull && cask_install
 }
 
-[ -d $HOME/.emacs.d ] && cask_install || {
-    cp -a $SRC/packages/emacs/ $HOME/.emacs.d && cask_install
-}
 ln -sfn $HOME/.emacs.d/init.el $HOME/.emacs.el
 ln -sfn $(brew --prefix)/opt/cask ~/.emacs.d/.cask/main # brew 前提
