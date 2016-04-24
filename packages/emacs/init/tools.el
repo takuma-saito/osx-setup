@@ -56,23 +56,24 @@
 (global-auto-complete-mode t)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/elisp/ac-dict")
 
-;; yasnippetを実行する
-(require 'yasnippet)
-(setq yas/snippet-dirs "~/.emacs.d/elisp/yasnippet-snippets")
-(custom-set-variables '(yas-trigger-key "TAB"))
+;;;; 一旦コメントアウト
+;; ;; yasnippetを実行する
+;; (require 'yasnippet)
+;; (setq yas/snippet-dirs "~/.emacs.d/elisp/yasnippet-snippets")
+;; (custom-set-variables '(yas-trigger-key "TAB"))
 
-;; 次の候補
-(setq yas/next-field-key '("TAB <tab>"))
+;; ;; 次の候補
+;; (setq yas/next-field-key '("TAB <tab>"))
 
-;; 前の候補
-(setq yas/prev-field-key '("<backtab>" "<S-tab>"))
+;; ;; 前の候補
+;; (setq yas/prev-field-key '("<backtab>" "<S-tab>"))
 
+;; ;; (yas-global-mode 1)
+
+;; ;; yasnippet 用のドロップダウンリスト
+;; (require 'dropdown-list)
+;; (setq yas-prompt-functions
+;;       '(yas-dropdown-prompt
+;;         yas-ido-prompt
+;;         yas-completing-prompt))
 ;; (yas-global-mode 1)
-
-;; yasnippet 用のドロップダウンリスト
-(require 'dropdown-list)
-(setq yas-prompt-functions
-      '(yas-dropdown-prompt
-        yas-ido-prompt
-        yas-completing-prompt))
-(yas-global-mode 1)
