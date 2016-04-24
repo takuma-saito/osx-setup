@@ -28,9 +28,12 @@ tor
 tree
 w3m
 wget
+whois
 zsh
 argon/mas/mas
+siege
 unzip
+subversion
 base64
 exiftool
 netcat
