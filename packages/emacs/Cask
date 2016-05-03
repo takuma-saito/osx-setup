@@ -41,7 +41,4 @@
 (depends-on "smart-compile")
 (depends-on "web-mode")
 (depends-on "yaml-mode")
-(depends-on "yaml-mode")
 (depends-on "yasnippet")
-(depends-on "yasnippet")
-(depends-on "yasnippet-bundle")
