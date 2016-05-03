@@ -42,6 +42,7 @@
   (define-key ruby-mode-map "\C-c\C-f" 'rct-ri))
 (add-hook 'ruby-mode-hook 'ruby-mode-hook-rcodetools)
 
+(setq ruby-insert-encoding-magic-comment nil)
 ;; (require 'anything-rcodetools)
 ;; (setq rct-get-all-methods-command "PAGER=cat fri -l")
 ;; (define-key anything-map [(control ?;)] 'anything-execute-persistent-action)

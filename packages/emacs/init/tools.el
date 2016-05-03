@@ -12,7 +12,7 @@
 (setq display-buffer-function 'popwin:display-buffer)
 (push '("^\*helm .+\*$" :regexp t) popwin:special-display-config)
 
-;; ;; ライン行数を表示する
+;; ライン行数を表示する
 (global-linum-mode)
 (setq linum-format "%4d ")
 (global-linum-mode 1)
@@ -36,7 +36,7 @@
           ("\\.f08$" . "gfortran -fbounds-check -fbacktrace  -O -Wuninitialized -cpp %f -o %n")
           ("\\.ml$"  . "ocaml %f")
           ("\\.d$"   . "dmd -run %f")
-          ("\\.rs$"  . "~/usr/bin/rustc %f -o %n && ./%n")
+          ("\\.rs$"  . "rustc %f -o %n && ./%n")
           ("\\.nim$"  . "nim c -r --verbosity:0 %n")
           ("\\.php$" . "php %f")
           ("\\.erl$" . "erl %f")
@@ -56,24 +56,18 @@
 (global-auto-complete-mode t)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/elisp/ac-dict")
 
-;;;; 一旦コメントアウト
-;; ;; yasnippetを実行する
-;; (require 'yasnippet)
-;; (setq yas/snippet-dirs "~/.emacs.d/elisp/yasnippet-snippets")
-;; (custom-set-variables '(yas-trigger-key "TAB"))
+;; スニペット補完
+(require 'yasnippet)
+(setq yas/snippet-dirs "~/.emacs.d/snippets")
+(custom-set-variables '(yas-trigger-key "TAB"))
+(setq yas/next-field-key '("TAB <tab>"))
+(setq yas/prev-field-key '("<backtab>" "<S-tab>"))
+(yas/global-mode t)
 
-;; ;; 次の候補
-;; (setq yas/next-field-key '("TAB <tab>"))
+;; yasnippet 用のドロップダウンリスト
+(require 'dropdown-list)
+(setq yas-prompt-functions
+      '(yas-dropdown-prompt
+        yas-ido-prompt
+        yas-completing-prompt))
 
-;; ;; 前の候補
-;; (setq yas/prev-field-key '("<backtab>" "<S-tab>"))
-
-;; ;; (yas-global-mode 1)
-
-;; ;; yasnippet 用のドロップダウンリスト
-;; (require 'dropdown-list)
-;; (setq yas-prompt-functions
-;;       '(yas-dropdown-prompt
-;;         yas-ido-prompt
-;;         yas-completing-prompt))
-;; (yas-global-mode 1)
