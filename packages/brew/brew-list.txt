@@ -49,3 +49,4 @@ graphviz
 mecab
 mecab-ipadic
 peco
+graphviz
