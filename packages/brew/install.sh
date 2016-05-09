@@ -8,6 +8,9 @@ SRC="$HOME/src/osx-setup"
     cd $SRC && git pull
 }
 
+# brew のインストール                                                                              
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 brew tap sanemat/font
 brew tap caskroom/cask
 brew update -v
