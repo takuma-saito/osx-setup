@@ -13,8 +13,8 @@ SRC="$HOME/src/osx-setup"
 
 brew tap sanemat/font
 brew tap caskroom/cask
-brew update -v
-brew cask update -v
+brew update --verbose
+brew cask update --verbose
 
 cat $SRC/packages/brew/brew-list.txt | xargs -I{} brew install --verbose {}
 cat $SRC/packages/brew/brew-cask-list.txt | xargs -I{} brew cask install --verbose --appdir=/Applications {}
