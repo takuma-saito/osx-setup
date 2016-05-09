@@ -1,0 +1,8 @@
+
+- karabiner
+  - 本体を一度起動して実行しないとダメ
+  - keyrepeat > on/off が自動で on にならない
+- Google IAM をインストールするスクリプトを書く
+- iTerm2 の設定書く
+
+
