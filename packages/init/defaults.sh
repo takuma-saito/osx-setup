@@ -2,16 +2,19 @@
 
 # 隠しファイルを可視化
 defaults write com.apple.finder AppleShowAllFiles true
+
 killall Finder
 
 # 拡張子を表示させる
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# ドックを左に変更する
-defaults write com.apple.dock orientation -string "left"
+# ドックを右に変更する
+defaults write com.apple.dock orientation -string "right"
 
 # ドックを隠す
 defaults write com.apple.dock autohide -bool true
+
+killall Dock
 
 # keyRepeat を最小にする
 defaults write NSGlobalDomain KeyRepeat -int 1
