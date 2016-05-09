@@ -1,7 +1,7 @@
 #!/bin/zsh
-
-export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+# export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
+# export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_NDK="/opt/ndk"
 # export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
 # export javaJP="java -Dfile.encoding=UTF-8"
@@ -49,7 +49,7 @@ export BOOST_ROOT=/opt/local/include/boost:$BOOST_ROOT
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # aws pass
-export JAVA_HOME="$(/usr/libexec/java_home)"
+# export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_AMITOOL_HOME="/usr/local/Cellar/ec2-ami-tools/1.5.3/libexec"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
 

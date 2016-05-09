@@ -11,10 +11,6 @@ do
     esac
 done
 
-function cask_install() {    
-    cd $HOME/.emacs.d && cask install --verbose
-}
-
 [[ $CLEAN || ! -d $SRC ]] && {
     [ -d $HOME/.emacs.d ] && {
 	mkdir -p $HOME/.trash/.emacs.d &&
@@ -26,10 +22,12 @@ function cask_install() {
 [ ! -d $SRC ] && {    
     mkdir -p $SRC
     git clone git@github.com/takuma-saito/osx-setup $SRC
-    cp -a $SRC/packages/emacs/ $HOME/.emacs.d && cask_install
 } || {
-    cd $SRC && git pull && cask_install
+    cd $SRC && git pull
 }
 
+cp -a $SRC/packages/emacs/ $HOME/.emacs.d
+cd $HOME/.emacs.d && cask install --verbose
+rm -f ~/.emacs.el
 ln -sfn $HOME/.emacs.d/init.el $HOME/.emacs.el
 ln -sfn $(brew --prefix)/opt/cask ~/.emacs.d/.cask/main # brew 前提
