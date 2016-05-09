@@ -25,7 +25,7 @@ function cask_install() {
 
 [ ! -d $SRC ] && {    
     mkdir -p $SRC
-    git clone git+ssh://git@github.com/takuma-saito/osx-setup $SRC
+    git clone git@github.com/takuma-saito/osx-setup $SRC
     cp -a $SRC/packages/emacs/ $HOME/.emacs.d && cask_install
 } || {
     cd $SRC && git pull && cask_install
