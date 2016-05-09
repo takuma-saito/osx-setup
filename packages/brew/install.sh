@@ -16,5 +16,5 @@ brew tap caskroom/cask
 brew update -v
 brew cask update -v
 
-cat $SRC/packages/brew/brew-list.txt | xargs -I{} brew install -v {}
+cat $SRC/packages/brew/brew-list.txt | xargs -I{} brew install --verbose {}
 cat $SRC/packages/brew/brew-cask-list.txt | xargs -I{} brew cask install --verbose --appdir=/Applications {}
