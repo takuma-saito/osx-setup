@@ -4,5 +4,6 @@
   - keyrepeat > on/off が自動で on にならない
 - Google IAM をインストールするスクリプトを書く
 - iTerm2 の設定書く
+- Dock の不要なアプリを削除する
 
 
