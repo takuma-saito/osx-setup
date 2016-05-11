@@ -51,3 +51,4 @@ mecab-ipadic
 peco
 graphviz
 jq
+mysql
