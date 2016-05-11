@@ -5,3 +5,4 @@ iterm2
 karabiner
 menumeters
 google-japanese-ime
+macdown
