@@ -15,5 +15,6 @@
     - その他のジェスチャ => ページ間をスワイプ => {2本指 => 3本指}
   - キーボード
     - ミッションコントロール =>  Mission Control => {control => alt に変更}
-- command + space のショートカットを設定する
+- command + space のショートカットを設定するる
+- capslock => control に変更
 
