@@ -17,4 +17,4 @@
     - ミッションコントロール =>  Mission Control => {control => alt に変更}
 - command + space のショートカットを設定するる
 - capslock => control に変更
-- emacs で alt (option) の扱いがおかしい
+- emacs で alt (option) の扱いがおかしい (iTerm2 の keys から変更可能)
