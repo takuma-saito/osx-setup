@@ -48,13 +48,6 @@ export BOOST_ROOT=/opt/local/include/boost:$BOOST_ROOT
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-# aws pass
-<<<<<<< HEAD
-=======
-# export JAVA_HOME="$(/usr/libexec/java_home)"
->>>>>>> origin/master
-export EC2_AMITOOL_HOME="/usr/local/Cellar/ec2-ami-tools/1.5.3/libexec"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
 
 # proxy
 # export T="http://localhost:8080/"
