@@ -14,3 +14,4 @@ SRC="$HOME/src/osx-setup"
 ln -sfn $SRC/packages/zsh/zsh ~/.zsh
 ln -sfn $SRC/packages/zsh/zsh_user ~/.zsh_user
 ln -sfn $SRC/packages/zsh/zshrc ~/.zshrc
+chsh -s /bin/zsh
