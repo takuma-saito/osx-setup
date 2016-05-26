@@ -12,14 +12,14 @@ path=(
     # 標準パス
     /bin
     /sbin
-    $HOME/bin
-    $HOME/usr/bin
-    /usr/local/bin
-    /usr/local/sbin
-    /usr/local/libexec
     /usr/bin
     /usr/sbin
     /usr/libexec
+    /usr/local/bin
+    /usr/local/sbin
+    /usr/local/libex
+    # $HOME/bin
+    # $HOME/usr/binec
     # $JAVA_HOME/bin
     # $HADOOP_HOME/bin
     # $PIG_HOME/bin
