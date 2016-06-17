@@ -30,7 +30,7 @@ export RUBYLIB=$HOME/lib/ruby
 # export PERL5LIB="$HOME/perl5/lib/perl5/darwin-thread-multi-2level:/Users/saitoutakuma/perl5/lib/perl5";
 
 # エディタ関係
-export EDITOR="/usr/local/bin/emacsclient -t"
+export EDITOR="/usr/local/bin/emacsclient"
 export UNICODE_DIR="/usr/local/share/ucd"
 export OZEMACS='/usr/local/bin/emacs'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
