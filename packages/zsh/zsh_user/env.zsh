@@ -63,6 +63,7 @@ export PYTHONDONTWRITEBYTECODE=1
 export HOMEBREW_GITHUB_API_TOKEN="6de311b54c5e9a47c2339bf4e5df2cd7aa0bfc62"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+[ "$(docker-machine ls -q)" = "default" ] && eval $(docker-machine env default)
 
 # denv
 which denv >/dev/null 2>&1
