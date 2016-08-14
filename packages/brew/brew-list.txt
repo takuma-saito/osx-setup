@@ -54,3 +54,5 @@ jq
 mysql
 gnu-sed
 watch
+direnv
+docker-machine
