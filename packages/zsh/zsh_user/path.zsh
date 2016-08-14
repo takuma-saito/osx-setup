@@ -1,13 +1,5 @@
 #!/bin/zsh
 
-# [ -z "$dyld_library_path" ] && typeset -xT DYLD_LIBRARY_PATH dyld_library_path
-# [ -z "$ld_library_path" ] && typeset -xT LD_LIBRARY_PATH ld_library_path
-# [ -z "$library_path" ] && typeset -xT LIBRARY_PATH library_path
-# [ -z "$c_include_path" ] && typeset -xT C_INCLUDE_PATH c_include_path
-# [ -z "$cplus_include_path" ] && typeset -xT CPLUS_INCLUDE_PATH cplus_include_path
-typeset -Ug path cdpath fpath manpath \
-    ld_library_path library_path c_include_path cplus_include_path dyld_library_path
-
 path=(
     # 標準パス
     /bin
