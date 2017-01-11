@@ -58,3 +58,4 @@ direnv
 docker-machine
 diffutils
 gnu-sed
+editorconfig
