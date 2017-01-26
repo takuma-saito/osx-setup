@@ -21,3 +21,5 @@
   - iTerm2 の keys から変更可能
 - control + T + arrow (矢印) で tmux の window の大きさ変化しない
   - 環境設定のキーボード > ショートカットで Mission Control とアプリケーションウインドウを off にした
+
+- iterm2 でスクロールできる上限が unlimited になっていない

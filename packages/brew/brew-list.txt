@@ -53,3 +53,9 @@ graphviz
 jq
 mysql
 gnu-sed
+watch
+direnv
+docker-machine
+diffutils
+gnu-sed
+editorconfig
