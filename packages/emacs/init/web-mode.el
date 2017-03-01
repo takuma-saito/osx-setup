@@ -16,9 +16,13 @@
 (add-to-list 'auto-mode-alist '("\\.html?$"     . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ejs$"       . web-mode))
 
-  ;;; インデント数
+;;; インデント数
 (defun web-mode-hook ()
   "Hooks for Web mode."
   (setq web-mode-code-indent-offset 2)
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)  
   (global-set-key "\C-xi" 'indent-region))
 (add-hook 'web-mode-hook 'web-mode-hook)
+
