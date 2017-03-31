@@ -133,3 +133,6 @@
 (setq emmet-self-closing-tag-style "")
 (setq emmet-move-cursor-after-expanding nil)
 
+;; javascript
+(setq js-indent-level 2)
+
