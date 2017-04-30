@@ -44,3 +44,4 @@
 (depends-on "yasnippet")
 (depends-on "editorconfig")
 (depends-on "emmet-mode")
+(depends-on "haskell-mode")
