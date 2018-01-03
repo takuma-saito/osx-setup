@@ -71,3 +71,5 @@
         yas-ido-prompt
         yas-completing-prompt))
 
+(setq edconf-exec-path "/usr/local/bin/editorconfig")
+(editorconfig-mode 1)

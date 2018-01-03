@@ -57,7 +57,7 @@
 
 ;;; js2-mode
 (autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.\\(js\\|json\\)$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.pac$" . js2-mode))
 
 ;; css の設定
@@ -124,4 +124,15 @@
             (setq indent-level 4)
             (setq python-indent 4)))
 
+;; emmet
+(require 'emmet-mode)
+(add-hook 'web-mode-hook  'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+(add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))) ;; indent 2 spaces.
+(setq emmet-self-closing-tag-style "")
+(setq emmet-move-cursor-after-expanding nil)
+
+;; javascript
+(setq js-indent-level 2)
 

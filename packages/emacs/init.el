@@ -35,7 +35,7 @@
 
   ;;;; other
   ;; "scss.el"
-  ;;"haskell.el"
+  "haskell.el"
   ;; "go.el"
   ;;"yatex.el"
   ;; "gnuplot.el"

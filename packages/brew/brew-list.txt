@@ -56,3 +56,8 @@ gnu-sed
 watch
 direnv
 docker-machine
+diffutils
+gnu-sed
+editorconfig
+ssh-copy-id
+git-lfs
