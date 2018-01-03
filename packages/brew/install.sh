@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xe
 SRC="$HOME/src/osx-setup"
 
 [ ! -d $SRC ] && {    
@@ -13,6 +13,7 @@ SRC="$HOME/src/osx-setup"
 
 brew tap sanemat/font
 brew tap caskroom/cask
+brew tap buo/cask-upgrade
 brew update --verbose
 brew cask update --verbose
 

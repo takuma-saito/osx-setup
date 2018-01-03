@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xe
 
 ./packages/brew/install.sh
 ./packages/emacs/install.sh
