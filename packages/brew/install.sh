@@ -19,6 +19,7 @@ brew cask update --verbose
 
 cat $SRC/packages/brew/brew-list.txt | xargs -I{} brew install --verbose {}
 cat $SRC/packages/brew/brew-cask-list.txt | xargs -I{} brew cask install --verbose --appdir=/Applications {}
+brew install http://git.io/sshpass.rb
 
 # install ricty
 cp -f /usr/local/share/fonts/Ricty*.ttf ~/Library/Fonts/
