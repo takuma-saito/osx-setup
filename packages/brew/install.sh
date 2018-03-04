@@ -13,6 +13,7 @@ SRC="$HOME/src/osx-setup"
 
 brew tap sanemat/font
 brew tap caskroom/cask
+brew tap caskroom/versions
 brew tap buo/cask-upgrade
 brew update --verbose
 brew cask update --verbose
