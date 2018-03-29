@@ -104,8 +104,10 @@ setopt auto_param_slash
 # 他のフレーズ展開がどれにもマッチしなかった場合、{}中の文字列・数字をソートして展開
 setopt braceccl
 
-# 豊富なグロッピング記号を使用する
-setopt EXTENDED_GLOB
+# グロブ周り
+setopt extended_glob
+setopt null_glob
+setopt ksh_glob
 
 # 重複したコマンド履歴は表示させない
 setopt HIST_IGNORE_ALL_DUPS
