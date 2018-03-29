@@ -108,6 +108,7 @@ setopt braceccl
 setopt extended_glob
 setopt null_glob
 setopt ksh_glob
+setopt no_bare_glob_qual
 
 # 重複したコマンド履歴は表示させない
 setopt HIST_IGNORE_ALL_DUPS
