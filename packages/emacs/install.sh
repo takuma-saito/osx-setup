@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/zsh -xe
 DIR="$HOME/src/osx-setup/packages/emacs"
 SRC="$HOME/src/osx-setup"
 CLEAN=

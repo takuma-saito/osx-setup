@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xe
 SRC="$HOME/src/osx-setup"
 
 [ ! -d $SRC ] && {    
@@ -13,11 +13,14 @@ SRC="$HOME/src/osx-setup"
 
 brew tap sanemat/font
 brew tap caskroom/cask
+brew tap caskroom/versions
+brew tap buo/cask-upgrade
 brew update --verbose
 brew cask update --verbose
 
 cat $SRC/packages/brew/brew-list.txt | xargs -I{} brew install --verbose {}
 cat $SRC/packages/brew/brew-cask-list.txt | xargs -I{} brew cask install --verbose --appdir=/Applications {}
+brew install http://git.io/sshpass.rb
 
 # install ricty
 cp -f /usr/local/share/fonts/Ricty*.ttf ~/Library/Fonts/

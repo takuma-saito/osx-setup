@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/zsh -xe
 
 # 隠しファイルを可視化
 defaults write com.apple.finder AppleShowAllFiles true

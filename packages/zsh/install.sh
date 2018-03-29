@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/zsh -xe
 SRC="$HOME/src/osx-setup"
 
 [ ! -d $SRC ] && {    
