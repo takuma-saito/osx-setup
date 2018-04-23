@@ -4,10 +4,10 @@ path=(
     # 標準パス
     /bin
     /sbin
+    /usr/local/bin
     /usr/bin
     /usr/sbin
     /usr/libexec
-    /usr/local/bin
     /usr/local/sbin
     /usr/local/libex
     # $HOME/bin
