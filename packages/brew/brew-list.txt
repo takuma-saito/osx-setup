@@ -58,3 +58,5 @@ editorconfig
 ssh-copy-id
 git-lfs
 q
+kubectl
+kops
