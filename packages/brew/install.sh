@@ -17,8 +17,8 @@ brew tap caskroom/versions
 brew tap buo/cask-upgrade
 brew update --verbose
 
-cat $SRC/packages/brew/brew-list.txt | xargs -I{} brew install --verbose {}
-cat $SRC/packages/brew/brew-cask-list.txt | xargs -I{} brew cask install --verbose --appdir=/Applications {}
+brew install --force --verbose $(cat ./packages/brew/brew-list.txt)
+brew cask install --verbose --appdir=/Applications --force $(cat ./packages/brew/brew-cask-list.txt)
 brew install http://git.io/sshpass.rb
 
 # install ricty

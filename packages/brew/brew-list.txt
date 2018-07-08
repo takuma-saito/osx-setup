@@ -1,5 +1,4 @@
 binutils
-brew-cask
 cask
 coreutils
 curl
@@ -22,7 +21,6 @@ ricty
 rsync
 socat
 source-highlight
-sshpass
 tmux
 tor
 tree
