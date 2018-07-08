@@ -37,7 +37,6 @@ netcat
 awscli
 ruby
 gcc
-scala
 sbcl
 erlang
 gauche

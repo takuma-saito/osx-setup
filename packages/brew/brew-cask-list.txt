@@ -6,3 +6,4 @@ karabiner
 menumeters
 google-japanese-ime
 macdown
+java
