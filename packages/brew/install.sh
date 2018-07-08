@@ -17,6 +17,7 @@ brew tap caskroom/versions
 brew tap buo/cask-upgrade
 brew update --verbose
 
+export HOMEBREW_NO_AUTO_UPDATE=1
 brew install --force --verbose $(cat ./packages/brew/brew-list.txt)
 brew cask install --verbose --appdir=/Applications --force $(cat ./packages/brew/brew-cask-list.txt)
 brew install http://git.io/sshpass.rb
