@@ -28,7 +28,6 @@ w3m
 wget
 whois
 zsh
-argon/mas/mas
 siege
 unzip
 subversion
