@@ -1,14 +1,5 @@
 #!/bin/bash -xe
-SRC="$HOME/src/osx-setup"
-
-[ ! -d $SRC ] && {    
-    mkdir -p $SRC
-    git clone https://github.com/takuma-saito/osx-setup.git $SRC
-} || {
-    cd $SRC && git pull
-}
-
-# brew のインストール                                                                              
+# brew のインストール
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap sanemat/font
