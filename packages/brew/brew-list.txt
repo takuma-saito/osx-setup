@@ -1,12 +1,3 @@
-binutils
-cask
-coreutils
-curl
-emacs
-findutils
-gawk
-git
-imagemagick
 nkf
 nmap
 openssl
@@ -28,7 +19,6 @@ w3m
 wget
 whois
 zsh
-argon/mas/mas
 siege
 unzip
 subversion
@@ -38,7 +28,6 @@ netcat
 awscli
 ruby
 gcc
-scala
 sbcl
 erlang
 gauche
