@@ -1,12 +1,3 @@
-binutils
-cask
-coreutils
-curl
-emacs
-findutils
-gawk
-git
-imagemagick
 nkf
 nmap
 openssl
