@@ -8,10 +8,6 @@
 (color-theme-initialize)
 (color-theme-ld-dark)
 
-(require 'popwin)
-(setq display-buffer-function 'popwin:display-buffer)
-(push '("^\*helm .+\*$" :regexp t) popwin:special-display-config)
-
 ;; ライン行数を表示する
 (global-linum-mode)
 (setq linum-format "%4d ")
