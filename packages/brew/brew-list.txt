@@ -8,7 +8,6 @@ readline
 reattach-to-user-namespace
 rbenv
 ruby-build
-ricty
 rsync
 socat
 source-highlight
