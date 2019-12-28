@@ -13,11 +13,11 @@
 ;;   '(add-hook 'ruby-mode-hook 'inf-ruby-setup-keybindings)
 ;;  )
 
-(require 'ruby-block)
-(defun ruby-mode-hook-ruby-block()
-    (ruby-block-mode t))
-(add-hook 'ruby-mode-hook 'ruby-mode-hook-ruby-block)
-(setq ruby-block-highlight-toggle 'overlay)
+;;(require 'ruby-block)
+;;(defun ruby-mode-hook-ruby-block()
+;;    (ruby-block-mode t))
+;;(add-hook 'ruby-mode-hook 'ruby-mode-hook-ruby-block)
+;;(setq ruby-block-highlight-toggle 'overlay)
 
 (defun ruby-insert-end ()
   (interactive)

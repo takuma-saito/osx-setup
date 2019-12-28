@@ -52,20 +52,5 @@
 (global-auto-complete-mode t)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/elisp/ac-dict")
 
-;; スニペット補完
-(require 'yasnippet)
-(setq yas/snippet-dirs "~/.emacs.d/snippets")
-(custom-set-variables '(yas-trigger-key "TAB"))
-(setq yas/next-field-key '("TAB <tab>"))
-(setq yas/prev-field-key '("<backtab>" "<S-tab>"))
-(yas/global-mode t)
-
-;; yasnippet 用のドロップダウンリスト
-(require 'dropdown-list)
-(setq yas-prompt-functions
-      '(yas-dropdown-prompt
-        yas-ido-prompt
-        yas-completing-prompt))
-
 (setq edconf-exec-path "/usr/local/bin/editorconfig")
 (editorconfig-mode 1)

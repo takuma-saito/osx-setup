@@ -3,7 +3,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-(require 'cask "~/.emacs.d/.cask/main/cask.el")
+;; brew install cask
+(require 'cask "/usr/local/opt/cask/cask.el")
 (cask-initialize)
 
 (setq load-path
