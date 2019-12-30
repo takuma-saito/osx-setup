@@ -26,3 +26,5 @@
   (global-set-key "\C-xi" 'indent-region))
 (add-hook 'web-mode-hook 'web-mode-hook)
 
+(require 'typescript-mode)
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))

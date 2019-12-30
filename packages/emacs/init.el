@@ -4,7 +4,7 @@
 
 
 ;; brew install cask
-(require 'cask "/usr/local/opt/cask/cask.el")
+(require 'cask "~/.emacs.d/.cask/main/cask.el")
 (cask-initialize)
 
 (setq load-path
@@ -36,7 +36,7 @@
 
   ;;;; other
   ;; "scss.el"
-  "haskell.el"
+  ;; "haskell.el"
   ;; "go.el"
   ;;"yatex.el"
   ;; "gnuplot.el"
