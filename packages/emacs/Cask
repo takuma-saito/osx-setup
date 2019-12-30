@@ -23,6 +23,7 @@
 (depends-on "julia-mode")
 (depends-on "lua-mode")
 (depends-on "markdown-mode")
+(depends-on "whitespace")
 (depends-on "nginx-mode")
 (depends-on "nim-mode")
 (depends-on "popup")
@@ -41,3 +42,4 @@
 (depends-on "swift-mode")
 (depends-on "haskell-mode")
 (depends-on "typescript-mode")
+(depends-on "company")
