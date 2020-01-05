@@ -41,5 +41,5 @@
 (depends-on "emmet-mode")
 (depends-on "swift-mode")
 (depends-on "haskell-mode")
-(depends-on "typescript-mode")
 (depends-on "company")
+(depends-on "tide")
